@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: floralwhite;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 130px;
+    background-color: beige;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li:hover {
+    /* background-color: #ccc; */
+    transform: scale(1.05);
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.firstSection div {
+    width: 40%;
+}
+
+.leftSection {
+    color: black;
+    margin-top: 80px;
+    font-size: 3rem;
+}
+
+.rightSection {
+    color: black;
+}
+
+.rightSection {
+    width: 100%;
+    /* or any specific width you need */
+    max-width: 100%;
+    /* ensures the div doesn't exceed its parent's width */
+    overflow: hidden;
+    /* hides any overflow content */
+}
+
+.rightSection img {
+    max-width: 100%;
+    /* ensures the image doesn't exceed the div's width */
+    height: auto;
+    /* maintains the image aspect ratio */
+    display: block;
+    /* removes any extra space below the image */
+
+}
+
+.contrastMatching {
+    /* color: #7F675B; */
+    color: red;
+}
+
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    margin: 23px;
+    border: solid black;
+}
+
+
+.firstBlock,
+.secondBlock,
+.thirdBlock,
+.fourthBlock {
+    width: 100%;
+    background-color: green;
+    border: 20px, red;
+}
+
+/* .secondSection{
+            display: flex;
+            flex-direction: column;
+            margin: 23px;
+            border: solid black;
+            border-style: inset;
+            color: black;
+            align-items: center;
+        }
+
+        .secondSection .techUsed{
+            padding: 2%;
+        }
+
+        .secondSection .skills{
+            font-size: 50px;
+        }
+
+        .secondSection .skillsDescription{
+            font-size: 18px;
+        }
+
+        .techUsed{
+            display: flex;
+            flex-direction: row;
+            width : 100%;
+            align-items: center;
+            justify-content: space-around;
+           
+        }
+
+        .techUsed .backEnd {
+            
+            width: 50%;
+            border-style: inset;
+            border: 2px solid ;
+            border-radius: 20px;;
+            margin-right: 2%;
+            margin-left: 2%;
+            
+        }
+
+        .techUsed .frontEnd{
+            
+           
+            width: 50%;
+            border-style: inset;
+            border: 2px solid ;
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+
+        .languages{
+           
+            width: 50%;
+            border-style: inset;
+            border: 2px solid ;
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+
+        .techUsed .backEnd{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+         .backEnd .backEndText{
+            font-size: 30px;
+        }
+
+        .techUsed .backEnd .backEndLogos{
+            display: flex;
+            align-items: center;
+        }
+
+        .techUsed .backEnd .backEndLogos div{
+            padding: 2%;
+            border: 2px solid ;
+            border-radius: 15px;
+        } */
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    margin: 23px;
+    /* border: solid black; */
+    /* border-style: inset; */
+    color: black;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    /* background-color: #f9f9f9; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-section .skills {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.second-section,
+.skills-description {
+    font-size: 18px;
+
+    text-align: center;
+}
+
+.tech-used {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    padding: 5%;
+}
+
+.backend,
+.frontend,
+.languages {
+    width: 45%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    /* box-shadow: 8px 8px 8px 8px blueviolet; */
+}
+
+.backend-text,
+.frontend-text,
+.language-text {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.backend-logos,
+.frontend-logos,
+.language-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tech-logo {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.tech-logo:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px blueviolet;
+}
+
+@media (max-width: 768px) {
+    .tech-used {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .backend,
+    .frontend,
+    .languages {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
