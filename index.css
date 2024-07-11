@@ -34,6 +34,11 @@ nav ul li {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 main {
     display: flex;
     width: 100%;
@@ -54,13 +59,46 @@ main {
 }
 
 .firstSection div {
-    width: 40%;
+    width: 45%;
 }
 
 .leftSection {
     color: black;
     margin-top: 80px;
     font-size: 3rem;
+    /* border: 1px solid red; */
+    
+}
+
+.leftSection .buttons{
+    display: flex;
+    flex-direction: row;
+    
+    max-width: 100%;
+    width: 100%;
+    justify-content: left;
+    align-content: center;
+    padding: 25px;
+    /* border: 1px solid red; */
+}
+.leftSection .buttons > button{
+    
+    padding: 2%;
+    /* border: 2px solid red; */
+    /* border-color: red; */
+    border-radius: 14px;
+    margin: 1%;
+    background-color: blanchedalmond;
+    max-width: fit-content;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#element{
+    color: red;
 }
 
 .rightSection {
@@ -74,6 +112,7 @@ main {
     /* ensures the div doesn't exceed its parent's width */
     overflow: hidden;
     /* hides any overflow content */
+   
 }
 
 .rightSection img {
@@ -83,6 +122,8 @@ main {
     /* maintains the image aspect ratio */
     display: block;
     /* removes any extra space below the image */
+
+    border-radius: 100%;
 
 }
 
@@ -107,88 +148,6 @@ main {
     background-color: green;
     border: 20px, red;
 }
-
-/* .secondSection{
-            display: flex;
-            flex-direction: column;
-            margin: 23px;
-            border: solid black;
-            border-style: inset;
-            color: black;
-            align-items: center;
-        }
-
-        .secondSection .techUsed{
-            padding: 2%;
-        }
-
-        .secondSection .skills{
-            font-size: 50px;
-        }
-
-        .secondSection .skillsDescription{
-            font-size: 18px;
-        }
-
-        .techUsed{
-            display: flex;
-            flex-direction: row;
-            width : 100%;
-            align-items: center;
-            justify-content: space-around;
-           
-        }
-
-        .techUsed .backEnd {
-            
-            width: 50%;
-            border-style: inset;
-            border: 2px solid ;
-            border-radius: 20px;;
-            margin-right: 2%;
-            margin-left: 2%;
-            
-        }
-
-        .techUsed .frontEnd{
-            
-           
-            width: 50%;
-            border-style: inset;
-            border: 2px solid ;
-            margin-right: 2%;
-            margin-left: 2%;
-        }
-
-        .languages{
-           
-            width: 50%;
-            border-style: inset;
-            border: 2px solid ;
-            margin-right: 2%;
-            margin-left: 2%;
-        }
-
-        .techUsed .backEnd{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-         .backEnd .backEndText{
-            font-size: 30px;
-        }
-
-        .techUsed .backEnd .backEndLogos{
-            display: flex;
-            align-items: center;
-        }
-
-        .techUsed .backEnd .backEndLogos div{
-            padding: 2%;
-            border: 2px solid ;
-            border-radius: 15px;
-        } */
 
 .second-section {
     display: flex;
@@ -282,3 +241,48 @@ main {
         margin-bottom: 20px;
     }
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    /* justify-items: center; */
+    align-items: center;
+    padding: 2%;
+    color: black;
+}
+
+.footer-1{
+    font-size: 1.5rem;
+}
+
+.footer .footer-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    width: 100%;
+    justify-content: center
+}
+
+.footer-2 > div{
+    margin: 1%;
+}
+
+
+.footer .social-media{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    justify-content: center;
+}
+
+.footer .social-media > div{
+   margin-right: 1%;
+   margin-bottom: 1%;
+}
+
+.footer .copyright{
+    color: gray;
+}
+

@@ -17,31 +17,42 @@
 <body>
     <header>
         <nav>
-            <div class="left">Harshit's Portfolio</div>
+            <div class="left" id="home-id">Harshit Batra</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
-
+                    <li><a href="#home-id">Home</a></li>
+                    <li><a href="#aboutus-id">About</a></li>
+                    <li><a href="#skill-id">Skills</a></li>
+                    <li><a href="#experience-id">Experience</a></li>
+                    <li> <a href="#project-id">Projects</a></li>
+                    <li><a href="#education-id">Education</a></li>
+                    <li><a href="#footer-id">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="firstSection">
-            <div class="leftSection">Hi, My name is <span class="contrastMatching">Harshit</span> and I am a Web
-                Developer</div>
+        <section class="firstSection" id="aboutus-id">
+            
+            <div class="leftSection">
+                Hi, My name is <span class="contrastMatching">Harshit</span>
+                <div>and I am a </div>
+                <span id="element"></span>
+                
+                <div class="buttons">
+                    <button class="btn-download-resume"><a href="https://drive.google.com/file/d/1t7Ue3w69RyVK_2f02o2hligvGxUY0jJq/view?usp=sharing" target="_blank">Download Resume</a></button>
+                    <button class="btn-github"><a href="https://github.com/hb99960" target="_blank">Visit Github</a></button>
+                </div>
+            </div>
+
             <div class="rightSection">
-                <img src="Images/right_bg.png" alt="">
+                <img src="Images/profile_photo_2.png" alt="">
             </div>
         </section>
 
         <section class="second-section">
-            <div class="skills">Skills</div>
+            <div class="skills" id="skill-id">Skills</div>
             <div class="skills-description">Here are some of my skills on which I have worked so far</div>
             <div class="tech-used">
                 <div class="backend">
@@ -80,7 +91,7 @@
         </section>
 
         <section class="second-section">
-            <div class="skills">Projects</div>
+            <div class="skills" id="project-id">Projects</div>
             <div class="skills-description">Here are some of my Projects on which I have worked so far</div>
             <div class="tech-used">
                 <div class="backend">
@@ -163,6 +174,31 @@
 
 
     </main>
+
+    <footer class="footer" id="footer-id">
+        <div class="footer-1">Harshit Batra</div>
+        <div class="footer-2">
+            <div class="home"><a href="#home-id">Home</a></div>
+            <div class="about-us"><a href="#aboutus-id">About us</a></div>
+            <div class="skills"><a href="#skill-id">Skills</a></div>
+            <div class="project"><a href="#project-id">Project</a></div>
+            <div class="education"><a href="#education-id">Education</a></div>
+        </div>
+        <div class="social-media">
+            <div class="linkedin"><a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a></div>
+            <div class="github"><a href="https://github.com/hb99960" target="_blank">Github</a></div>
+            <div class="leet-code"><a href="https://leetcode.com/u/harshitbatra0602/" target="_blank">Leetcode</a></div>
+        </div>
+        <div class="copyright">&copy; 2024 Harshit Batra. All rights reserved.</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Anroid Developer.', 'Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
