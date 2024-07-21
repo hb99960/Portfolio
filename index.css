@@ -63,6 +63,12 @@ main {
 }
 
 
+
+
+
+/*  */
+
+
 /* nav .right a{
     text-transform: uppercase;
 } */
@@ -71,20 +77,24 @@ main {
     display: flex;
     justify-content: space-around;
     margin: 80px 0;
+    
     /* background-image: linear-gradient(to right, #38A2D7, #561139); */
 }
 
 .firstSection div {
-    width: 45%;
+    width: 60%;
+    
 }
 
 .leftSection {
     color: black;
     margin-top: 80px;
     font-size: 3rem;
+    max-width: 100%;
     /* border: 1px solid red; */
     /* background-image: url(Images/bg-gif.gif); */
     /* border-radius: 50%; */
+   
 
 }
 
@@ -129,6 +139,8 @@ main {
 #element {
     color: red;
 }
+
+
 
 .rightSection {
     color: black;
@@ -255,15 +267,22 @@ main {
 }
 
 .tech-logo {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border: 1px inset black;
-
     border-radius: 15px;
     /* background-color: #e0e0e0; */
     font-size: 16px;
     text-align: center;
+    
+}
 
-
+.tech-logo img{
+    overflow: hidden;
+    max-width: 100%;
+            max-height: 100%;
 }
 
 .backend:hover,
@@ -321,7 +340,7 @@ main {
 }
 
 
-.tech-used {
+.project-used {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -329,9 +348,7 @@ main {
     padding: 5%;
 }
 
-.backend,
-.frontend,
-.languages {
+.project-card {
     width: 45%;
     padding: 20px;
     /* border: 2px solid black; */
@@ -394,9 +411,14 @@ main {
     max-height: none;
 }
 
-.backend:hover,
-.frontend:hover,
-.languages:hover {
+.project-card img{
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-card:hover
+ {
     background-color: #ccc;
     transform: scale(1.05);
     box-shadow: 3px 3px 3px bisque;
@@ -408,9 +430,7 @@ main {
         align-items: center;
     }
 
-    .backend,
-    .frontend,
-    .languages {
+    .project-card{
         width: 80%;
         margin-bottom: 20px;
     }
@@ -496,6 +516,15 @@ main {
 .content-first{
     display: flex;
     flex-direction: row;
+   
+}
+
+.content-first img{
+    width: 75px;
+    max-height: 50px;
+    
+    margin-top: 2%;
+    margin-right: 1%;
 }
 
 .content-first-right{
@@ -701,3 +730,5 @@ input[type=submit]:hover {
 .footer .copyright {
     color: gray;
 }
+
+
