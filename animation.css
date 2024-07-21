@@ -5,6 +5,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    /* position: relative; */
     /* border: 1px solid red; */
 }
 .first-animation{
@@ -18,7 +19,7 @@
 /*   background-color:black; */
     background-size: cover;
     animation: animateBg 50s linear infinite;
-    z-index: -2;
+    z-index: -1;
 }
 
 @keyframes animateBg{
@@ -39,7 +40,7 @@
     background: #fff;
     border-radius: 50%;
     /* border: 1px solid red; */
-    box-shadow: 0 0 0 4px rgba(26, 241, 91, 0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    box-shadow: 0 0 0 4px rgba(8, 223, 73, 0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
     animation: staranimate 3s linear infinite;
     z-index: -1;
 }
@@ -47,10 +48,10 @@
     content:'';
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-10%);
     width: 900px;
     height: 1px;
-    background: linear-gradient(90deg,#090909,transparent);
+    background: linear-gradient(90deg,#2272FF,transparent);
 }
 @keyframes staranimate
 {
