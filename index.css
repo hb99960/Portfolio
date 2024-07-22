@@ -319,7 +319,7 @@ main {
 .project-section {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 65%;
     
     margin: 23px;
     /* border: solid black; */
