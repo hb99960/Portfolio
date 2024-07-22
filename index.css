@@ -19,13 +19,24 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 130px;
+    height: 100px;
     /* background-color: khaki; */
     color: white;
+    width: 100%;
+    /* position: fixed; */
+    
+}
+
+.nav-bar{
+    position: fixed;
+    background-color: #1d1d1d;
+    z-index: 1000;  
 }
 
 nav ul {
@@ -35,14 +46,21 @@ nav ul {
 
 nav ul li:hover {
     
-    transform: scale(1.05);
-    /* color: #2272FF; */
+    transform: scale(1.15);
+    color: #2272FF;
+    
 }
 
 nav ul li {
     list-style: none;
     margin: 0 23px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit; 
 }
 
 a {
@@ -117,21 +135,13 @@ main {
 .leftSection .buttons>button {
 
     padding: 2%;
-    /* border: 2px solid red; */
-    /* border-color: red; */
     border-radius: 14px;
     margin: 1%;
-
     max-width: fit-content;
     width: 100%;
-
-    /* text-decoration: none; */
     padding: 15px;
-    /* color: green; */
-    
     font-size: 1rem;
     background-color: #2272FF;
-    /* border-color: #2272FF; */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -140,6 +150,8 @@ main {
     transform: scale(1.05);
     box-shadow: 3px 3px 3px #1d1d1d;
 }
+
+
 
 #element {
     color: #2272FF;
@@ -754,25 +766,45 @@ input[type=submit]:hover {
 
 }
 
+.footer .footer-2>div:hover{
+    
+    transform: scale(1.15);
+    color: #2272FF;
+    /* background-color: red; */
+}
+
 .footer-2>div {
     margin: 1%;
-
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.footer .footer-2 > div:hover * {
+    color: inherit; /* Inherit color from parent */
+}
+
 
 
 .footer .social-media {
     display: flex;
     flex-direction: row;
-
     width: 100%;
     justify-content: center;
-
 }
 
-.footer .social-media>div {
+.footer .social-media .link {
     margin-right: 1%;
-    margin-bottom: 1%;
+}
 
+.footer .social-media .link img {
+    margin-right: 10px;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    height: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-media .link img:hover {
+    transform: scale(1.25);
 }
 
 .footer .copyright {
