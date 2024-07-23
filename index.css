@@ -9,7 +9,7 @@ html {
     /* background-image: linear-gradient(to bottom right, #76bde1, #5bd4ec); */
     /* background-color: beige; */
     background-color: #1d1d1d;
-
+    
 }
 
 body {
@@ -95,7 +95,7 @@ main {
 .firstSection {
     display: flex;
     justify-content: space-around;
-    margin: 10px 0;
+    margin: 40px 0;
     /* background-color: green; */
     
     /* background-image: linear-gradient(to right, #38A2D7, #561139); */
@@ -643,7 +643,7 @@ main {
     width: 100%;
     /* margin: 100px 100px 0px 100px; */
     padding : 60px;
-    margin: 1px;;
+    /* margin: 1px;; */
     /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
@@ -652,8 +652,39 @@ main {
     /* background-image: url(Images/galaxy.jpg); */
     background-color: #1d1d1d;
     /* clip-path: polygon(0 20%, 15% 0, 100% 15%, 100% 100%, 0 100%); */
-   
+    /* background-image: linear-gradient(0deg, #1d1d1d, #2272ff); */
+    
 }
+
+
+ /* #id1, #id0{
+    background-image: linear-gradient(to bottom right, #1d1d1d, #1f1f1f, #212121, #232323, #252525, #272727, #292929, #2b2b2b, #2d2d2d, #2f2f2f, #313131, #333333, #2272ff);
+    clip-path: polygon(0 20%, 15% 0, 100% 15%, 100% 100%, 0 100%);
+}
+ #id2{
+    clip-path: polygon(0 20%, 15% 0, 100% 15%, 100% 100%, 0 100%);
+    background-image: linear-gradient(to bottom right, #1d1d1d, #1f1f1f, #212121, #232323, #252525, #272727, #292929, #2b2b2b, #2d2d2d, #2f2f2f, #313131, #333333, #2272ff);
+ }
+ #id3{
+    
+}
+#id4{
+    
+}
+#id5{
+    
+} 
+*/
+#footer-id {
+    background: linear-gradient(
+        to bottom, 
+        #1d1d1d,
+        #1d1d1d 90%,
+        #2272FF 100%,
+        #2272FF
+      );  
+} 
+
 
 .left-container-arrow {
     height: 0;
