@@ -135,7 +135,7 @@ main {
 .leftSection .buttons>button {
 
     padding: 2%;
-    border-radius: 14px;
+    border-radius: 8px;
     margin: 1%;
     max-width: fit-content;
     width: 100%;
@@ -143,6 +143,7 @@ main {
     font-size: 1rem;
     background-color: #2272FF;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
 }
 
 .leftSection .buttons>button:hover {
@@ -666,15 +667,15 @@ main {
     background-image: linear-gradient(to bottom right, #1d1d1d, #1f1f1f, #212121, #232323, #252525, #272727, #292929, #2b2b2b, #2d2d2d, #2f2f2f, #313131, #333333, #2272ff);
  }
  #id3{
-    
+    background-image: linear-gradient(to bottom right, #1d1d1d, #1f1f1f, #212121, #232323, #252525, #272727, #292929, #2b2b2b, #2d2d2d, #2f2f2f, #313131, #333333, #2272ff);
 }
 #id4{
-    
+    background-image: linear-gradient(0 deg, #1d1d1d, #1f1f1f, #212121, #232323, #252525, #272727, #292929, #2b2b2b, #2d2d2d, #2f2f2f, #313131, #333333, #2272ff);
 }
 #id5{
     
-} 
-*/
+}  */
+
 #footer-id {
     background: linear-gradient(
         to bottom, 

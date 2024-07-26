@@ -1,0 +1,101 @@
+/* Modal container */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #1d1d1d;
+    margin: 15% auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 40%;
+    
+    color: #2272FF;
+    border-radius: 25px;
+    position: fixed;
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); 
+}
+
+#modal-text{
+    font-size: 30px;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    
+}
+
+#modal-period{
+    font-size: 20px;
+    color: gray;
+    padding-bottom: 1%;
+}
+
+#modal-detail{
+    color: white;
+    padding-bottom: 2%;
+}
+
+/* Close Button */
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+}
+#modal-image{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.modal-btn-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#modal-github, #modal-liveDemo{
+    padding: 2%;
+    border-radius: 14px;
+    margin: 1%;
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #2272FF;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: gray;
+   
+}
+#modal-github:hover, #modal-liveDemo:hover{
+    background-color: #2b62c0;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px #1d1d1d;
+}
+
+
+#modal-github{
+    background-color: #1d1d1d;
+}
+
+#modal-liveDemo{
+    color: white;
+}
