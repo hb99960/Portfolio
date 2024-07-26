@@ -1,5 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+
+   
     var readMoreLinks = document.querySelectorAll('.read-more');
 
     readMoreLinks.forEach(function(link) {
@@ -23,8 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var modalText = document.getElementById("modal-text");
     var modalPeriod = document.getElementById("modal-period");
     var modalDetail = document.getElementById("modal-detail");
-    // var modalGithub = document.getElementById("modal-github");
-    // var modalLiveDemo = document.getElementById("modal-liveDemo");
+    var modalLinkGithub = document.getElementById("modal-link-github");
+    var modalLinkLiveDemo = document.getElementById("modal-link-liveDemo");
+    var modalTag = document.getElementById("modal-tag-container");
+    
 
    
     projects.forEach(function(p) {
@@ -34,13 +38,35 @@ document.addEventListener('DOMContentLoaded', function () {
             var text = p.querySelector('.project-text').textContent;
             var period = p.querySelector('.project-period').textContent;
             var detail = p.querySelector('.project-detail').textContent;
-                
+            var github = p.querySelector('.project-text').getAttribute("github");
+            var liveDemo = p.querySelector('.project-text').getAttribute("liveDemo");
+
+            var tagsArray = [];
+            var tagParent = p.querySelector(".project-tags");
+            var elements = tagParent.querySelectorAll('.project-tag');
+            elements.forEach(function(element){
+                var tag = element.textContent;
+                console.log(tag);
+                tagsArray.push(tag);
+            });
+            console.log(tagsArray);
 
             modal.style.display = "block";
             modalImage.src = image;
             modalText.textContent = text;
             modalPeriod.textContent = period;
             modalDetail.textContent = detail;
+            modalLinkGithub.href = github;
+            modalLinkLiveDemo.href = liveDemo;
+
+            modalTag.innerHTML = '';
+            for(var i=0; i<tagsArray.length; i++){
+                var newDiv = document.createElement('div');
+                newDiv.className = "modal-tag";
+                newDiv.textContent = tagsArray[i];
+                modalTag.appendChild(newDiv);
+            }
+
         });
     })
 

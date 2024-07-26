@@ -99,3 +99,21 @@
 #modal-liveDemo{
     color: white;
 }
+
+#modal-tag-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-tag{
+    padding: 2px 2px;
+    border: 1px #337bf8;
+    border-radius: 15px;
+    /* background-color: #e0e0e0; */
+    font-size: 15px;
+    text-align: center;
+    color: #2272FF;
+    background-color:  #2b2a2a;
+}

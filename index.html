@@ -282,16 +282,24 @@
             <div class="modal-content">
                 <span id="close">&times;</span>
                 <img id="modal-image" src="">
-                <div class="tag"></div>
+                <div id="modal-tag-container"><div class="modal-tag"></div></div>
                 <div id="modal-text"></div>
                 <div id="modal-period"></div>
                 <div id="modal-detail"></div>
                 <div class="modal-btn-container">
-                    <button id="modal-github">View Github</button>
-                    <button id="modal-liveDemo">Live Demo</button>
+                    <a id="modal-link-github" href="" target="_blank"><button id="modal-github">View Github</button></a>
+                    <a id="modal-link-liveDemo" href="" target="_blank"><button id="modal-liveDemo">Live Demo</button></a>
                 </div>
             </div>
         </div>
+
+        <!--
+        https://github.com/hb99960/Hammer
+        https://github.com/hb99960/ThaparFeeds/tree/master/ThaparFeeds
+        https://github.com/hb99960/Portfolio
+        Erometer : 
+        QuickFix : 
+         -->
 
         <section class="cover-section"  id="id4">
             <section class="project-section">
@@ -304,37 +312,33 @@
                         <span class="ribbon">Latest</span>
 
                         <img class="project-image" src="Images/project-crypto-guild.png" alt="" srcset="">
-                        <div class="project-tags">
-                            <div class="project-tag spring">Spring</div>
-                            <div class="project-tag postgres">postgres</div>
-                            <div class="project-tag mysqL">mysql</div>
+                        <div id="project-card-tags" class="project-tags">
+                            <div class="project-tag">Spring</div>
+                            <div class="project-tag">postgres</div>
+                            <div class="project-tag">mysql</div>
                         </div>
                         <div class="project-info">
-
-                            <div class="project-text">Crypto Guild</div>
+                            <div class="project-text" github="https://www.google.com/?client=safari" liveDemo ="https://www.google.com/?client=safari">Crypto Guild</div>
                             <small class="project-period">2024-Present</small>
                         </div>
                         <div class="project-detail">Our Crypto Virtual Trading Platform offers a realistic and risk-free
                             environment for traders to practice and improve their skills. It features real-time market
-                            data,
-                            portfolio management, trading simulation, educational resources, performance analytics, and
-                            a
-                            supportive community. This platform helps both novice and experienced traders sharpen their
+                            data, portfolio management, trading simulation, educational resources, performance analytics, and
+                            a supportive community. This platform helps both novice and experienced traders sharpen their
                             strategies and gain confidence in cryptocurrency trading.
                             <!-- <a href="javascript:void(0);" class="read-more">Read more...</a> -->
                         </div>
-
                     </div>
 
                     <div class="project-card">
                         <img class="project-image" src="Images/project-erometer-poster.png" alt="" srcset="">
-                        <div class="project-tags">
+                        <div id="project-card-tags" class="project-tags">
                             <div class="project-tag spring">Spring</div>
                             <div class="project-tag postgres">postgres</div>
                             <div class="project-tag mysqL">mysql</div>
                         </div>
                         <div class="project-info">
-                            <div class="project-text">Erometer</div>
+                            <div class="project-text" github="https://www.google.com/?client=safari" liveDemo ="https://www.google.com/?client=safari">Erometer</div>
                             <small class="project-period">2018</small>
                         </div>
                         <div class="project-detail">Developed a system to automate entry logging for students and
@@ -349,13 +353,13 @@
 
                     <div class="project-card">
                         <img class="project-image" src="Images/project-erometer-poster.png" alt="" srcset="">
-                        <div class="project-tags">
+                        <div id="project-card-tags" class="project-tags">
                             <div class="project-tag spring">Spring</div>
                             <div class="project-tag postgres">postgres</div>
                             <div class="project-tag mysqL">mysql</div>
                         </div>
                         <div class="project-info">
-                            <div class="project-text">Hammer Time</div>
+                            <div class="project-text" github="https://www.google.com/?client=safari" liveDemo ="https://www.google.com/?client=safari">Hammer Time</div>
                             <small class="project-period">2017</small>
                         </div>
                         <div class="project-detail">Designed an Android app for online auctions featuring secure user
@@ -374,13 +378,13 @@
 
                     <div class="project-card">
                         <img class="project-image" src="Images/project-thapar-feeds.png" alt="" srcset="">
-                        <div class="project-tags">
+                        <div id="project-card-tags" class="project-tags">
                             <div class="project-tag spring">Spring</div>
                             <div class="project-tag postgres">postgres</div>
                             <div class="project-tag mysqL">mysql</div>
                         </div>
                         <div class="project-info">
-                            <div class="project-text">ThaparFeed</div>
+                            <div class="project-text" github="https://www.google.com/?client=safari" liveDemo ="https://www.google.com/?client=safari">ThaparFeed</div>
                             <small class="project-period">2016</small>
                         </div>
                         <div class="project-detail"> designed an online Question/Answer portal forum aimed at
@@ -398,13 +402,13 @@
 
                     <div class="project-card">
                         <img class="project-image" src="Images/project-quick-fix.png" alt="" srcset="">
-                        <div class="project-tags">
+                        <div id="project-card-tags" class="project-tags">
                             <div class="project-tag spring">Spring</div>
                             <div class="project-tag postgres">postgres</div>
                             <div class="project-tag mysqL">mysql</div>
                         </div>
                         <div class="project-info">
-                            <div class="project-text">QuickFix</div>
+                            <div class="project-text" github="https://www.google.com/?client=safari" liveDemo ="https://www.google.com/?client=safari">QuickFix</div>
                             <small class="project-period">2016</small>
                         </div>
                         <div class="project-detail">I designed a website called Quickfix, which offers a convenient
@@ -425,13 +429,19 @@
 
                     <div class="project-card">
                         <img class="project-image" src="Images/project-erometer-poster.png" alt="" srcset="">
-                        <div class="project-tags">
+                        <div id="project-card-tags" class="project-tags">
                             <div class="project-tag spring">Spring</div>
                             <div class="project-tag postgres">postgres</div>
-                            <div class="project-tag mysqL">mysql</div>
+                            <!-- <div class="project-tag mysqL">mysql</div> -->
+                            <div class="project-tag spring">abc</div>
+                            <div class="project-tag postgres">xyz</div>
+                            <div class="project-tag spring">pqr</div>
+                            <div class="project-tag postgres">jkl</div>
+                            <div class="project-tag spring">mno</div>
+                            <div class="project-tag postgres">yup</div>
                         </div>
                         <div class="project-info">
-                            <div class="project-text">Portfolio</div>
+                            <div class="project-text" github="https://www.google.com/?client=safari" liveDemo ="https://www.google.com/?client=safari">Portfolio</div>
                             <small class="project-period">2017</small>
                         </div>
                         <div class="project-detail">Designed an Android app for online auctions featuring secure user
