@@ -9,6 +9,7 @@ html {
     /* background-image: linear-gradient(to bottom right, #76bde1, #5bd4ec); */
     /* background-color: beige; */
     background-color: #1d1d1d;
+    overflow-x: hidden;
     
 }
 
@@ -30,7 +31,6 @@ nav {
     color: white;
     width: 100%;
     /* position: fixed; */
-    
 }
 
 .nav-bar{
@@ -94,6 +94,7 @@ main {
 
 .firstSection {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin: 40px 0;
     /* background-color: green; */
@@ -312,19 +313,7 @@ main {
     box-shadow: 3px 3px 3px #2272FF;
 }
 
-@media (max-width: 768px) {
-    .tech-used {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .backend,
-    .frontend,
-    .languages {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
 
 
 /* Projects */
@@ -334,16 +323,15 @@ main {
     flex-direction: column;
     width: 65%;
     
-    margin: 23px;
+    margin: 13px;
     /* border: solid black; */
     /* border-style: inset; */
     color: white;
     align-items: center;
-    padding: 20px;
+    /* padding: 5px; */
     /* border-radius: 10px; */
     /* background-color: #f9f9f9; */
-    box-shadow: 0 4px 8px 0 #2272FF;
-   
+    /* box-shadow: 0 4px 8px 0 #2272FF;   */
 }
 
 .project-section .project {
@@ -354,13 +342,13 @@ main {
 .project-section,
 .project-description {
     font-size: 15px;
-
     text-align: center;
 }
 
 
 .project-used {
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-around;
 
@@ -369,13 +357,14 @@ main {
 
 .project-card {
     width: 45%;
-    padding: 20px;
+    margin: 23px;
     /* border: 2px solid black; */
     border-radius: 20px;
     /* background-color: #fff; */
     /* background-image: linear-gradient(180deg, #38A2D7, #561139); */
     /* box-shadow: 8px 8px 8px 8px blueviolet; */
-    margin: 2%;
+    /* margin: 2%; */
+    padding: 2%;
     box-shadow: 0 4px 8px 0 #2272FF;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -470,19 +459,6 @@ main {
     transform: scale(1.05);
     box-shadow: 3px 3px 3px #2272FF;
 }
-
-@media (max-width: 768px) {
-    .project-tag {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card{
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-
 
 /*  */
 

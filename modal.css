@@ -117,3 +117,52 @@
     color: #2272FF;
     background-color:  #2b2a2a;
 }
+
+
+/* Responsive css */
+
+@media (max-width: 768px) {
+/* 768 */
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+
+
+    .tech-used {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-used{
+        flex-direction: column;
+    }
+
+    .project-card{
+        margin-bottom: 20%;
+    }
+
+    .backend,
+    .frontend,
+    .languages {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media  (max-width: 1100px) {
+    .project-used{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-tag {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
