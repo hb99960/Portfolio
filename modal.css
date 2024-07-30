@@ -69,6 +69,7 @@
 .modal-btn-container{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 #modal-github, #modal-liveDemo{
@@ -99,6 +100,7 @@
 #modal-liveDemo{
     color: white;
 }
+
 
 #modal-tag-container{
     display: flex;

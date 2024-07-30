@@ -2,20 +2,20 @@
 document.addEventListener('DOMContentLoaded', function () {
 
    
-    var readMoreLinks = document.querySelectorAll('.read-more');
+    // var readMoreLinks = document.querySelectorAll('.read-more');
 
-    readMoreLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            var projectDetail = this.closest('.project-detail');
-            projectDetail.classList.toggle('expanded');
+    // readMoreLinks.forEach(function(link) {
+    //     link.addEventListener('click', function() {
+    //         var projectDetail = this.closest('.project-detail');
+    //         projectDetail.classList.toggle('expanded');
             
-            if (projectDetail.classList.contains('expanded')) {
-                this.textContent = 'Read less...';
-            } else {
-                this.textContent = 'Read more...';
-            }
-        });
-    });
+    //         if (projectDetail.classList.contains('expanded')) {
+    //             this.textContent = 'Read less...';
+    //         } else {
+    //             this.textContent = 'Read more...';
+    //         }
+    //     });
+    // });
 
     var projects = document.querySelectorAll(".project-card");
     var span = document.getElementById("close");
@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var modalLinkGithub = document.getElementById("modal-link-github");
     var modalLinkLiveDemo = document.getElementById("modal-link-liveDemo");
     var modalTag = document.getElementById("modal-tag-container");
+    var readMore = document.getElementById('read-more-id');
+            
     
 
    
@@ -37,9 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
             var image = p.querySelector('.project-image').getAttribute("src")
             var text = p.querySelector('.project-text').textContent;
             var period = p.querySelector('.project-period').textContent;
-            var detail = p.querySelector('.project-detail').textContent;
+            var detail = p.querySelector('.front-detail').textContent + p.querySelector('.read-more-text').textContent;
             var github = p.querySelector('.project-text').getAttribute("github");
             var liveDemo = p.querySelector('.project-text').getAttribute("liveDemo");
+            
+            // readMore.style.display = "none";
+            // readMore.textContent = " ";
+            
+
 
             var tagsArray = [];
             var tagParent = p.querySelector(".project-tags");
@@ -72,11 +79,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     span.onclick = function(){
         modal.style.display = "none";
+        // readMore.style.display = "inline";
     }
 
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            // readMore.style.display = "inline";
         }
     }
 });

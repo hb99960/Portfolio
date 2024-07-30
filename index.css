@@ -116,7 +116,8 @@ main {
     /* border: 1px solid red; */
     /* background-image: url(Images/bg-gif.gif); */
     /* border-radius: 50%; */
-   
+    /* display: flex;
+    flex-direction: column; */
 
 }
 
@@ -193,6 +194,11 @@ main {
     /* box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px; */
 
+}
+
+.about-text{
+    font-size: 1rem;
+    color: gray;
 }
 
 .contrastMatching {
@@ -425,6 +431,10 @@ main {
     margin-left: 5px;
 }
 
+.read-more-text{
+    display: none;
+}
+
 .expanded  {
     max-height: none;
 }
@@ -451,6 +461,7 @@ main {
     overflow: hidden;
     width: 275px;
     height: 250px;
+    border-radius: 20px;
 }
 
 .project-card:hover
@@ -546,7 +557,13 @@ main {
 .content-first{
     display: flex;
     flex-direction: row;
-   
+}
+
+.youtube-img{
+    padding-top: 3%;
+    margin-left: 60%;
+    justify-content: flex-end;
+    /* float: right; */
 }
 
 .content-first img{
