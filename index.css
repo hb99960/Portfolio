@@ -97,6 +97,7 @@ main {
     flex-direction: row;
     justify-content: space-around;
     margin: 40px 0;
+    width: 60%;
     /* background-color: green; */
     
     /* background-image: linear-gradient(to right, #38A2D7, #561139); */
@@ -152,6 +153,11 @@ main {
     background-color: #2b62c0;
     transform: scale(1.05);
     box-shadow: 3px 3px 3px #1d1d1d;
+}
+
+.leftSection .about-text{
+    font-size:large;
+    text-align:start;
 }
 
 
